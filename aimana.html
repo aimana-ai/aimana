@@ -2,32 +2,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coach de OKRs</title>
+    <title>Responsive Full-Screen Website</title>
     <style>
-        /* Basic reset */
+        /* Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body {
+        html, body {
+            height: 100%;
+            width: 100%;
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
             background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            overflow: hidden;
         }
 
         .container {
-            max-width: 1200px;
             width: 100%;
+            height: 100%;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            text-align: center;
+            max-width: 800px;
         }
 
         /* Responsive styles */
@@ -38,12 +55,26 @@
 
             .container {
                 padding: 10px;
+                box-shadow: none;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+                padding: 0 10px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <h1>Welcome to My Full-Screen Website</h1>
+        <p>This webpage adapts to the full screen on a computer and still looks great on mobile devices.</p>
+
+        <!-- Embedded Voiceflow Chat Widget -->
         <script type="text/javascript">
             (function(d, t) {
                 var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -64,3 +95,4 @@
     </div>
 </body>
 </html>
+
